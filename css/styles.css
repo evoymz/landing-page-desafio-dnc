@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --darkgray: #303030;
+    --white1: #F9F9F9;
+    --white2: #F5F5F5;
+    --white3: #FFFFFF;
+    --orange: #C07212;
+    --black: #000000;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Inter';
+}
+
+header {
+    height: 29.7rem;
+    background-color: var(--darkgray);
+}
+
+#titleHeader {
+    color: var(--white3);
+    font-weight: 600;
+    font-size: 3.75rem;
+    line-height: 4.5rem;
+    height: 4.5rem;
+    position: absolute;
+    top: 12.875rem;
+    right: 22.125rem;
+    left: 3.875rem;
+
+}
+
+#textHeader {
+    color: var(--white3);
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    position: absolute;
+    top: 18.625rem;
+    right: 22.125rem;
+    bottom: 8.875rem;
+    left: 3.875rem;
+}
+
+#infoMenu {
+    background-color: var(--white1);
+    height: 14.313rem;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.infosMenu{
+    margin-top: 6rem;
+}
+
+#infoMenu h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 1.75rem;
+}
+
+#infoMenu p {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-top: 0.5rem;
+}
+
+#fotoProjeto {
+    width: 31.875rem;
+    height: 37.813rem;
+    position: relative;
+}
+
+.fotosProjeto {
+    width: 31.875rem;
+    height: 37.813rem;
+    position: relative;
+}
+
+#fotoProjeto2 {
+    display: none;
+    border-radius: 30px;
+}
+
+
+.setas {
+    cursor: pointer;
+}
+
+.setas:hover {
+    transform: translateY(-7px);
+    transition-duration: 0.5s;
+}
+
+#setaDireita {
+    position: absolute;
+    bottom: 300px;
+    left: 450px;
+}
+
+#setaEsquerda {
+    position: absolute;
+    bottom: 300px;
+    left: -5px;
+    display: none;
+}
+
+#secaoImagem {
+    display: grid;
+    grid-auto-flow: column;
+    columns: auto;
+    height: 48.688rem;
+    align-items: center;
+
+}
+
+#textoArquitetos {
+    width: 45.938rem;
+    height: 10.063rem;
+    margin-left: 4.813rem;
+}
+
+#textoArquitetos h1 {
+    margin-bottom: 3rem;
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 1.25rem;
+}
+
+#textoArquitetos p {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+}
+
+#secaoFormulario {
+    height: 39.875rem;
+    background-color: var(--darkgray);
+    text-align: center;
+
+}
+
+#secaoFormulario h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: var(--white3);
+    padding-top: 5.438rem;
+    margin-bottom: 3rem;
+}
+
+.inputs {
+    width: 31.75rem;
+    height: 4.5rem;
+    border-radius: 10px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    padding-left: 1.875rem;
+}
+
+#secaoFormulario button {
+    width: 17.875rem;
+    height: 4.625rem;
+    border-radius: 10px;
+    background-color: var(--orange);
+    color: var(--white3);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 1.875rem;
+    cursor: pointer;
+    box-shadow: 0 5px 10px #d6ab92;
+}
+
+#secaoFormulario button:hover {
+    color: var(--orange);
+    background-color: var(--white1);
+}
+
+#secaoFormulario button:active {
+    box-shadow: none;
+    transform: translateY(4px);
+
+}
+
+#inputNome {
+    margin-bottom: 3.875rem;
+}
+
+#inputEmail {
+    margin-bottom: 5.5rem;
+}

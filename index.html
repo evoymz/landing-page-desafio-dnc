@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Desafio 1 - Desenvolva uma Landing Page</title>
+</head>
+<body>
+    <!--titulo superior da pagina-->
+    <header>
+
+        <h1 id="titleHeader">Tradição em projetos de arquitetura</h1>
+        <p id="textHeader">Arquitetura residencial e comercial.</p>
+
+    </header>
+<!--secao do menu de informacao-->
+    <section id="infoMenu">
+
+        <div id="empreendimentos" class="infosMenu">
+            <h1>850</h1>
+            <p> empreendimentos construídos</p>
+        </div>
+        <div id="anosMercado" class="infosMenu">
+            <h1>40</h1>
+            <p> anos de mercado e experiência</p>
+        </div>
+        <div id="projetosConstruidos" class="infosMenu">
+            <h1>2,000,000</h1>
+            <p> m² em projetos construídos</p>
+        </div>
+
+    </section>
+    <!--secao que contem imagem com carrossel e texto central-->
+    <section id="secaoImagem">
+
+            <div id="textoArquitetos">
+                <h1>Arquitetos com História e Experiência.</h1>
+                <p>Nós realizamos desde 2002 projetos e gerenciamento de obras. Com mais de 800 projetos e 2.000.000 de m² construídos, tendo como principal proposta transformar em realidade os sonhos de seus clientes, criando projetos personalizados, unindo a tradição e a modernidade em nossos projetos.</p>
+            </div>
+            <div id="fotoProjeto">
+
+
+                <img src="imgs/fotoProjeto1.svg" alt="" id="fotoProjeto1" class="fotosProjeto">
+                <img src="imgs/fotoProjeto2.jpg" alt="" id="fotoProjeto2" class="fotosProjeto">
+
+
+                <img   src="imgs/seta-esquerda.png" alt=""
+                class="setas" id="setaEsquerda" onclick="rolarParaEsquerda()">
+                <img src="imgs/seta-direita.png" alt="" class="setas"
+                id="setaDireita" onclick="rolarParaDireita()">
+
+            </div>
+
+    </section>
+    <!--secao de formulario-->
+    <section id="secaoFormulario">
+
+        <h1>Conheça mais sobre nossos serviços:</h1>
+
+        <form action="https://api.sheetmonkey.io/form/9JkabT8F9viDx2K9YExWHu" method="post">
+
+            <input type="text" placeholder="Nome" name="Name" id="inputNome" class="inputs" required> <br>
+            <input type="email" placeholder="Email" name="Email" id="inputEmail" class="inputs" required> <br>
+            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+            <button>Fale Conosco</button> <br>
+
+        </form>
+
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
